@@ -2,10 +2,10 @@ import sys
 import platform
 
 def formatar_titulo(linha):
-    tituloFormatado = linha.replace('-', '')
-    if len(linha) < 12:
-        tituloFormatado = tituloFormatado.zfill(12)
-    return tituloFormatado
+    titulo_formatado = linha.replace('-', '')
+    if len(titulo_formatado) < 12:
+        titulo_formatado = titulo_formatado.zfill(12)
+    return titulo_formatado
 
 def calcular_digitos_verificadores(titulo):
     # Multiplica-se cada dígito pelo peso correspondente
